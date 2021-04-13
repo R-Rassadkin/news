@@ -103,7 +103,8 @@ export default {
     font-size: 25px;
     width: 400px;
     margin-left: 700px;
-    color: rgb(52, 104, 0);
+    color: rgb(21, 39, 4);
+    font-size: 40px;
 
 }
 .solution{
