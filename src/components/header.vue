@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h2>НОВОСТИ</h2>
+    <h2>НООСТИ</h2>
 </div>
 
 
