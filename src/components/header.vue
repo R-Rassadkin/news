@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h2>НООСТИ</h2>
+    <h2>НОВОСТИ</h2>
 </div>
 
 
@@ -12,8 +12,6 @@ export default {
         return{
 
         }
-
-        
     },
 }
 </script>
@@ -22,7 +20,6 @@ export default {
     height: 100px;
     width: 100%;
     background: rgb(4, 69, 80);
-    
     margin-bottom: 150px;
 }
 </style>

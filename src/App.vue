@@ -1,7 +1,8 @@
 <template>
-    <h1>{{now}}</h1>
+<div class="container">
+  <h1 class="title">{{now}}</h1>
     <hr>
-    <span>открыто:{{openRate}}| прочитано:{{readRate}}</span>
+    <span class="title">открыто:{{openRate}}| прочитано:{{readRate}}</span>
     <hr>
     <news
        v-for="(item,idx) in arr"
@@ -17,6 +18,9 @@
       @read-news='readNews'
       @unmark='unMark'
       ></news>
+
+</div>
+    
 </template>
 
 <script>
@@ -34,7 +38,8 @@ export default {
       arr:[
         {id:1,
         name:' news 1',
-        isOpen:false,src:'1.jpg',
+        isOpen:false,
+        тsrc:'1.jpg',
         title:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum!',
         wasRead:false},
 
@@ -87,6 +92,9 @@ export default {
 }
 .container{
   color: azure;
+}
+.title{
+  color: black;
 }
 body,
 h1,
