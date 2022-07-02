@@ -2,6 +2,7 @@
 
 <div class="task">
     <p class="task__name">{{name}}</p>
+
     <app-button class="task__BtnOpen"
       @action="open" 
       color="task__BtnOpen" 
@@ -19,6 +20,7 @@
       v-if="isNewsOpen">
       <hr>
       <p class="solution__title">{{title}}</p>
+
       <app-button 
         color="solution__BtnRead" 
         v-if="!wasRead" 
@@ -85,8 +87,6 @@ export default {
                 this.isNewsOpen=false
                 this.$emit('read-news',this.id)
         }
-        
-        
     },
 
     components:{
@@ -139,8 +139,7 @@ export default {
         right: 200px;
         left: 1300px;
         outline: none;
-        
-}
+    }
 }
 
 .solution{

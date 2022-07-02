@@ -1,10 +1,13 @@
 <template>
+
     <button 
         :class='color' 
         @click="$emit('action')"
         ><slot/>
     </button>
+
 </template>
+
 <script>
 export default {
     emits:['action'],
@@ -16,7 +19,7 @@ export default {
         color:{
         type:String,
         dafault:'',
-            validator(value){
+        validator(value){
             return ['BtnOpen','BtnDanger','BtnRead'].includes(value)
             }
         }

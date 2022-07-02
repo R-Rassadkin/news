@@ -1,9 +1,9 @@
 <template>
-<div class="container">
-  <h1 class="title">{{now}}</h1>
-    <hr>
-    <span class="title">открыто:{{openRate}}| прочитано:{{readRate}}</span>
-    <hr>
+<div class="background">
+  <Header></Header>
+  
+  <span class="score">открыто:{{openRate}}| прочитано:{{readRate}}</span>
+    
     <news
        v-for="(item,idx) in arr"
       :key="idx"
@@ -25,6 +25,7 @@
 
 <script>
 import news from './components/news.vue'
+import Header from './components/header.vue'
 
 
 export default {
@@ -74,7 +75,8 @@ export default {
     }
   },
   components: {
-    news
+    news,
+    Header
   }
 }
 </script>
@@ -90,10 +92,11 @@ export default {
   font-size: 25px;
   font-weight: 900;
 }
-.container{
-  color: azure;
+.background{
+  background: rgb(17, 196, 196);
+  height: 2000px;
 }
-.title{
+.score{
   color: black;
 }
 body,
